@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Komputer</string>
+    <string name="transition_string">hello</string>
+
+    <string name="connection_error">Problemy z połączeniem.</string>
+
+</resources>

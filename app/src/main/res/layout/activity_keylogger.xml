@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="pl.jacekpiszczek.androidapp.activities.additional.KeyloggerActivity">
+
+    <LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorPrimary">
+        <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_margin="10dp" android:padding="10dp" app:cardElevation="10dp" android:layout_weight="1">
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:padding="10dp">
+                <TextView android:text="Ładowanie.." android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:id="@+id/text_keylogger_keys" android:textAlignment="viewStart"
+                    android:fontFamily="@font/muli" />
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+        <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="3" android:background="@color/colorPrimary">
+
+            <TextView android:text="Podgląd wpisywanych znaków" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView723" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                android:textColor="@color/text" android:textSize="24sp" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp" android:fontFamily="@font/muli" />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

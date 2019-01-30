@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="pl.jacekpiszczek.androidapp.activities.additional.SayActivity">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_weight="2" android:layout_margin="10dp" app:contentPadding="10dp" app:cardCornerRadius="5dp"
+            app:cardElevation="6dp">
+            <android.support.constraint.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2">
+
+                <Button android:text="Powiedz" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:id="@+id/button_say_content" style="@style/Widget.AppCompat.Button.Colored" android:onClick="onSayClick"
+                    android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp" android:fontFamily="@font/muli" />
+                <EditText android:layout_width="0dp" android:layout_height="40dp" android:inputType="textPersonName"
+                    android:ems="10" android:id="@+id/text_say_content" android:hint="Co powiedzieć?"
+                    android:textAlignment="center" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:fontFamily="@font/muli" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1" android:background="@color/colorPrimary">
+
+            <TextView android:text="Synteza mowy" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/textView55"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp" android:textSize="24sp"
+                android:textColor="@color/text" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+                android:fontFamily="@font/muli" />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
